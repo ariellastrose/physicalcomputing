@@ -1,1 +1,5 @@
 #The Fantasy Item
+
+The set comes with a pair of head braces that are connected by a series of wires. It also includes a remote control that people can use to operate the device. There is a switch on the remote control that determines the direction of the flow of information. If you push the switch to the left the flow of information will go from the right headset to the left headset. If it’s pushed to the right the flow of information will go from the left headset to the right headset. Each head set will be labeled to indicate whether it’s left or right. There is also a power button that is used to turn the device on and off.
+
+The persons will place the brace around their heads. If you want to receive the information from the person using the left head brace, push the switch to the right while the person is thinking of the information. The electrodes on the brace will pick up the brain waves and transfer the information to the person wearing the right head brace. When the person is done sending information, use the remote to turn off the device.
