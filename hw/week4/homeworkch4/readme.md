@@ -1,0 +1,4 @@
+#Color Changing Lamp
+<a href="https://drive.google.com/file/d/160Lpvkox1JXyHrRuyPWCmvuKHMPuxiak/view?usp=sharing">Photo</a>
+
+For this assignment I had to build a lamp that changes color depending on what sensor is touched. I started off with assembling all of the wires, LEDs, resistors, and switches on the breadboard and Arduino. Afterwards, I typed a code that allowed the sensor to behave properly using the example that was provided in the textbook. However, when I uploaded the code to the device, I noticed that the LED light was not working. It wouldn't even light up. I tried ensuring that the light was hooked up properly and thats all of the other items on the breadboard were connected to no avail. I'm not exactly sure why the LED won't work but I will continue working on this project until it does.  
