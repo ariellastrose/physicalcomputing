@@ -62,7 +62,7 @@ void loop() {
     //outside of millis
     //setColor(r[counter],g[counter],b[counter]);
 
-    setColor(r[], g[counter++], b[counter++]);
+    setColor(r[counter], g[counter], b[counter]);
   }
 
   
