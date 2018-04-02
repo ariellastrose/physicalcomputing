@@ -1,0 +1,25 @@
+<h1>The Rainbow Motion Sensor Light</h1>
+  <h2>General Overview</h2>
+    <h3>Project Purpose</h3>
+      <p>I have always thought that motion sensor lights were interesting and for my midterm, I wanted to try and make my own version of them. Instead of just having a light that turned on and off at the detection of motion, I wanted to add a fun element that could be aesthetically pleasing. During the normal delay period between the activation and deactivation of the light, I decided to have have it change colors every second for this period of time.</p>
+    <h3>Ideal Form Factor</h3>
+      <p>I would like to create a light the size of a standard table lamp. My project works by the user moving within a range of 20ft to the sensor to turn on the light. As soon as the sensor doesn't detect motion from the user, it begins a countdown that will eventually lead to it being turned off if there is still a lack of motion. During this delay, the light will change colors. The input is the motion detected by the PIR motion sensor. I used this component because I needed something to detect motion and it was the most available option. The output is the vibrant colors showcasing the sensor's delay before turning off due to the lack of motion received by the sensor. I used a RGB LED for this because I wanted something small and it was readily available. This type of LED is also perfect for changing colors.</p>
+    <h3>Parts</h3>
+      <ul>
+        <li>PIR motion sensor</li>
+        <li>RGB LED</li>
+        <li>Breadboard</li>
+        <li>Arduino</li>
+        <li>USB cable</li>
+        <li>Resistors</li>
+        <li>Wires</li>
+      </ul>
+    <h3>Code</h3>
+      <p>When motion is detected, the timer starts. Once the countdown finishes, the light turns off. During the delay, the LED changes colors after every second.</p>
+    <h3>What Worked and Didn't Work</h3>
+      <p>The color changing light worked but the motion sensor didn't.</p>
+    <h3>If I Had More Time</h3>
+      <p>If I had more time I would've made the scale of the device larger so it could be the size of a regular table lamp.</p>
+<h2>Process</h2>
+  <p>Initially, I was planning on only using the arduino to build the light. I had a regular LED hooked up to ground and the third pin, the output of the PIR hooked up to the second pin, and the other two wires on the PIR hooked up to 5V and ground. Afterwards, I uploaded a code to my arduino that allowed it to act as a basic motion sensor light. The setup worked but I had to change it if I wanted to add the color changing effect because I needed an RGB LED for it to work. As a result, my setup changed drastically to include a breadboard as well. [INSERT IMAGE]</p>
+  <p>The new set up now involved resistors and many wires connecting the arduino and the breadboard. In regards to the updated code, I was able to get the color changing aspect of the light to work but motion detection aspect of it broke. The light would stay on, regardless of whether there was motion or not, and cycle through the colors I coded. I am still trying to get it to work properly.</p>

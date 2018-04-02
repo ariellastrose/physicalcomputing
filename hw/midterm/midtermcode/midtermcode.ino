@@ -9,7 +9,10 @@
   int interval;
   boolean startTimer = false;
   int counter = 0;
-  //int r = [];
+  int lengths = 3;
+  int r = [255,100,40];
+  int g = [40,255,57];
+  int b = [44,37,249];
   
 void setup() {
   // put your setup code here, to run once:
@@ -54,8 +57,10 @@ void loop() {
     if (millis () - startTimer >= interval) {
       counter++;
     }
+
+  }
     //if counter > length of my array items startTimer = false
-    if (counter > length.array) {
+    if (counter > lengths) {
       startTimer = false; 
     }
     
