@@ -1,0 +1,27 @@
+<h1>Gesture Sensing Media Controls</h1>
+  <h2>General Overview</h2>
+    <h3>Project Purpose</h3>
+      <p>The purpose of this project is to produce a device that allows people to have power over the media controls in their computer through a gesture sensor. The gesture sensor is a fun way of using these controls and it is perfect for people who are looking for a way to easily do this without having to press a button. It is also perfect for those whose keyboard media controls are broken.</p>
+    <h3>Input and Output</h3>
+      <p>The input is the motion detected by the gesture sensor. I used this component because I needed something to detect gestures and it was a sensor that could work on 5V. The output is the operation of the media controls: volume increase and decrease and music start/stop.</p>
+    <h3>Parts</h3>
+      <ul>
+        <li>Arduino Leonardo</li>
+        <li>Sparkfun ZX Distance and Gesture Sensor</li>
+        <li>Breadboard</li>
+        <li>USB cable</li>
+        <li>Wires</li>
+      </ul>
+    <h3>Code</h3>
+      <p>When motion a certain gesture is detected, there is corresponding code that tells the device which media control to use. For example, if you swipe left then the volume decreases.</p>
+    <h3>What Worked and Didn't Work</h3>
+      <p>The sensor doesn't detect gestures well. It is difficult for it read the correct movement. However, when it does detect motion correctly then it plays the correct corresponding media control.</p>
+    <h3>If I Had More Time</h3>
+      <p>If I had more time I would've probably added more gestures that I could use with different media controls.</p>
+<h2>Process</h2>
+  <p>Initially, I had my gesture sensor hooked up to a breadboard that was connected to the Arduino Uno. However, this Arduino runs on a 5V voltage while the sensor runs a 3.3V. This led to error messages when trying to test to see if the sensor worked. I tried to use a level shifter to convert the flow of the voltage to 3.3V but this was not successful. I then proceeded to use the Arduino Flora in place of the Arduino Uno because it runs on 3.3V. However, when trying to use the gesture sensor for the media controls on my computer, it didn’t work. The gesture sensor itself was working on the monitor series. However, it wouldn’t connect to the media controls of my computer to lower and raise the volume of the music.</p>
+  <a href="https://drive.google.com/file/d/1GMzwI7_Ey46UcLnLoF94WlAGbAohj4Cj/view?usp=sharing">Arduino Flora Setup</a>
+  <p>The next course of action was to test to see if the HID library I was using was the problem or if it was the arduino itself. To do this, I disconnected the Arduino Flora and setup the Arduino Leonard in its place. The reason for this is because the Leonardo is better for working with keyboard functions. I then connected a button to see if I could affect the media controls with it. I was able to get the button to stop and start the music that was playing which demonstrated that the library worked. I still wanted to utilize a gesture sensor so I got a sensor that could run on a 5V voltage.</p>
+  <p>The new sensor worked much better than the previous one. I was able to decrease the volume on my laptop with a left swiping gesture. However, it has issues in regards to sensitivity and which gesture it will detect, if any at all. It is difficult to get the sensor to detect right and up swiping motions.</p>
+  <a href="https://drive.google.com/file/d/1AZGduRGU6OmluX2aogbGwHTjoVxDMiNB/view?usp=sharing">Video</a>
+  <a href="https://drive.google.com/file/d/1NXXlLCta27dlBsRhF50zvZd4dSrpJR8N/view?usp=sharing">Gesture Sensor Setup with Leonardo</a>
